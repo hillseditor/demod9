@@ -1,2 +1,22 @@
 <?php
 
+/**
+ * Implements hook_theme().
+ */
+function custom_page_theme($existing, $type, $theme, $path) {
+  // var_dump('Helllooooo');
+  // return [
+  //   'page--my-page' => [
+  //     'path' => 'templates',
+  //     'template' => 'page--my-page',
+  //   ],
+  // ];
+  return [
+    'page--my-page' => [
+      'variables' => [
+        'test_var' => NULL,
+        'loremipsum' => NULL,
+      ],
+    ],
+  ];
+}
