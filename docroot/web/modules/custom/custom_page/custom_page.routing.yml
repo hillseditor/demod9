@@ -1,0 +1,7 @@
+custom_page:
+  path: 'custom-page'
+  defaults: 
+    _controller: 'Drupal\custom_page\Controller\CustomPageController::customPage'
+    _title: 'Custome Page'
+  requirements:
+    _permission: 'access content'
