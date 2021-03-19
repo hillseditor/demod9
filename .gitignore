@@ -3,47 +3,47 @@
 # earlier versions of Drupal are tracked in `community/PHP/`
 
 # Ignore configuration files that may contain sensitive information
-/sites/*/*settings*.php
-/sites/*/*services*.yml
+/docroot/web/sites/*/*settings*.php
+/docroot/web/sites/*/*services*.yml
 
 # Ignore paths that may contain user-generated content
-/sites/*/files
-/sites/*/public
-/sites/*/private
-/sites/*/files-public
-/sites/*/files-private
+/docroot/web/sites/*/files
+/docroot/web/sites/*/public
+/docroot/web/sites/*/private
+/docroot/web/sites/*/files-public
+/docroot/web/sites/*/files-private
 
 # Ignore paths that may contain temporary files
-/sites/*/translations
-/sites/*/tmp
-/sites/*/cache
+/docroot/web/sites/*/translations
+/docroot/web/sites/*/tmp
+/docroot/web/sites/*/cache
 
 # Ignore testing related files
-/sites/simpletest
+/docroot/web/sites/simpletest
 
 # Ignore drupal core (if not versioning drupal sources)
-/core
-/modules/README.txt
-/profiles/README.txt
-/sites/README.txt
-/sites/example.sites.php
-/sites/example.settings.local.php
-/sites/development.services.yml
-/themes/README.txt
-/vendor
-/.csslintrc
-/.editorconfig
-/.eslintignore
-/.eslintrc.json
-/.gitattributes
-/.htaccess
-/autoload.php
-/composer.json
-/composer.lock
-/example.gitignore
-/index.php
-/LICENSE.txt
-/README.txt
-/robots.txt
-/update.php
-/web.config
+/docroot/web/core
+/docroot/web/modules/README.txt
+/docroot/web/profiles/README.txt
+/docroot/web/sites/README.txt
+/docroot/web/sites/example.sites.php
+/docroot/web/sites/example.settings.local.php
+/docroot/web/sites/development.services.yml
+/docroot/web/themes/README.txt
+/docroot/web/vendor
+/docroot/web/.csslintrc
+/docroot/web/.editorconfig
+/docroot/web/.eslintignore
+/docroot/web/.eslintrc.json
+/docroot/web/.gitattributes
+/docroot/web/.htaccess
+/docroot/web/autoload.php
+/docroot/web/composer.json
+/docroot/web/composer.lock
+/docroot/web/example.gitignore
+/docroot/web/index.php
+/docroot/web/LICENSE.txt
+/docroot/web/README.txt
+/docroot/web/robots.txt
+/docroot/web/update.php
+/docroot/web/web.config
