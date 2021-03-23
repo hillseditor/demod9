@@ -5,3 +5,11 @@ custom_page:
     _title: 'Custome Page'
   requirements:
     _permission: 'access content'
+
+custom_page_form:
+  path: 'my-page/config'
+  defaults:
+    _form: 'Drupal\custom_page\Form\CustomPageAdminForm'
+    _title: 'Custom Page Admin form'
+  requirements:
+    _permission: 'access content' 

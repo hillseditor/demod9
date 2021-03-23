@@ -65,10 +65,13 @@
 
     <div class="layout-content">
       {{ page.content }}
-      <p>Test twig template!</p>
-      <p>test_var: {{ test_var }}</p>
+      
+      <p>Text Area: {{ cptext }}</p>
 
-      <p>loremipsum_var: {{ loremipsum}}</p>
+      loremipsum_var:
+      {% for loremipsum_item in loremipsum %}
+        <p>{{ loremipsum_item }}</p>
+    {% endfor %}
     </div>{# /.layout-content #}
 
     {% if page.sidebar_first %}

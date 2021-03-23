@@ -1,6 +1,6 @@
 name: Custom Page
 type: module
-description: 'Custom page that can be access via URL'
+description: 'Custom page that can be access via URL using Drupal version : 9.1.5'
 package: Customs
 version: 1.0
 core_version_requirement: ^8 || ^9

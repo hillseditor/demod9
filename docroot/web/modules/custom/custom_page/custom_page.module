@@ -4,19 +4,35 @@
  * Implements hook_theme().
  */
 function custom_page_theme($existing, $type, $theme, $path) {
-  // var_dump('Helllooooo');
-  // return [
-  //   'page--my-page' => [
-  //     'path' => 'templates',
-  //     'template' => 'page--my-page',
-  //   ],
-  // ];
   return [
     'page--my-page' => [
       'variables' => [
         'test_var' => NULL,
         'loremipsum' => NULL,
+        'cptext' => NULL,
       ],
     ],
   ];
+}
+
+/**
+ * Implements hook_preprocess_page_title().
+ */
+function custom_page_preprocess_page_title(&$variables) {
+  $config = \Drupal::config('custom_page.settings');
+  if (\Drupal::request()->attributes->get('_route') == 'custom_page' && !empty($config->get('cptitle'))) {
+    $variables['title'] = t('@title', ['@title' => $config->get('cptitle')]);
+  }elseif (\Drupal::request()->attributes->get('_route') == 'custom_page' && empty($config->get('cptitle'))) {
+    $variables['title'] = 'Custome Page';
+  }
+}
+
+function custom_page_preprocess_page(&$variables) {
+  // dump(\Drupal::request());
+  // dump($variables);
+  if (\Drupal::request()->attributes->get('_route') == 'custom_page') {
+    // dump(\Drupal::request());
+    $variables['#attached']['library'][] = 'custom_page/css-custom_page_style';
+  }
+  // dump($variables);
 }

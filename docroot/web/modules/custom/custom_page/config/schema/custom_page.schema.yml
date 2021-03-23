@@ -1,0 +1,10 @@
+# sutom_page.settings:
+#   type: config_object
+#   label: 'Configuration page LoremIpsum API config'
+#   mapping:
+#     nopar:
+#       type: integer
+#       label: 'Number of Paragraphs'
+#     title:
+#       type: string
+#       label: 'Custom Page Title'

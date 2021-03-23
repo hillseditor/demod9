@@ -1,0 +1,5 @@
+custom_page.admin.config:
+  title: 'Custom Page module'
+  base_route_name: custom_page.admin.config
+  names:
+    - custom_page.settings
